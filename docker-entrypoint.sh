@@ -1,3 +1,3 @@
 #!/bin/sh
 
-exec node src/main.js
+exec chpst -e /secrets node src/main.js

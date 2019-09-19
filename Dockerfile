@@ -18,6 +18,8 @@ WORKDIR /opt/traduora
 
 COPY --from=builder /opt/traduora/dist/ /opt/traduora/
 
+RUN apk --no-cache add runit
+
 COPY docker-entrypoint.sh .
 
 EXPOSE 8080
